@@ -78,6 +78,7 @@
         <module name="JavadocMethod">
             <property name="accessModifiers" value="public"/>
             <property name="allowedAnnotations" value="Override, Test"/>
+            <property name="tokens" value="METHOD_DEF, ANNOTATION_FIELD_DEF"/>
         </module>
         <module name="JavadocParagraph"/>
         <module name="JavadocStyle"/>
@@ -87,6 +88,7 @@
         </module>
         <module name="MissingJavadocMethod">
             <property name="ignoreMethodNamesRegex" value="^main.*$"/>
+            <property name="tokens" value="METHOD_DEF, ANNOTATION_FIELD_DEF"/>
         </module>
         <module name="MissingJavadocType"/>
         <module name="NonEmptyAtclauseDescription"/>
@@ -105,7 +107,7 @@
             <property name="caseIndent" value="4"/>
             <property name="throwsIndent" value="4"/>
             <property name="lineWrappingIndentation" value="4"/>
-            <property name="arrayInitIndent" value="4"/>
+            <property name="arrayInitIndent" value="8"/>
         </module>
         <module name="OuterTypeFilename"/>
         <module name="TodoComment"/>
@@ -167,7 +169,7 @@
         </module>
         <module name="OperatorWrap">
             <property name="option" value="NL"/>
-            <property name="tokens" value="BAND, BOR, BSR, BXOR, DIV, EQUAL, GE, GT, LAND, LE, LITERAL_INSTANCEOF, LOR, LT, MINUS, MOD, NOT_EQUAL, PLUS, QUESTION, SL, SR, STAR, METHOD_REF "/>
+            <property name="tokens" value="BAND, BOR, BSR, BXOR, DIV, EQUAL, GE, GT, LAND, LE, LITERAL_INSTANCEOF, LOR, LT, MINUS, MOD, NOT_EQUAL, QUESTION, SL, SR, STAR, METHOD_REF "/>
         </module>
         <module name="SeparatorWrap">
             <property name="tokens" value="DOT"/>
